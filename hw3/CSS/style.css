@@ -1,0 +1,308 @@
+/*
+    Modern Web Programming(Group 10)
+    Homework 3 Ring Menu
+    style.css
+    css for index.html
+    Made by 舒俊淮
+    Copyright By 舒俊淮 © 2016 All Rights Reserved.
+    No.15331274
+    School of Data and Computer Science
+    Sun Yat-sen University
+    2016-09-25
+*/
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#bottom-positioner {    /*设定初始位置*/
+    position: fixed;
+    left: 50%;
+    bottom: 100px;
+}
+
+#button{
+    position: absolute;    /*button这个block相对于父亲block的位置，直观上看起来是白色@+的容器的位置*/
+    top: -215px;
+    left: -99px;
+}
+
+#button:hover {         /*设置button这个block的hover大小是有必要的，触发功能之后如果鼠标停留在几个功*/
+    width: 200px;       /*能小圆圈之间的空隙时，功能应该被继续显示*/
+    height: 300px;      /*这里没规定位置的原因是继承了button的位置信息*/
+}
+
+.apb{
+    width: 30px;            /*规定初始图标尺寸*/
+    height: 30px;
+    background-color: rgba(0,0,60,.4);
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    top: 161px;             /*相对于button这个block的位置，直观上看起来是白色@+的位置*/
+    left: 110px;
+
+    -webkit-transition: all 0.5s 0.6s;  /*结束时间，从鼠标离开图标的时候开始计时，根据视频，这里有延迟*/
+    -o-transition: all 0.5s 0.6s;
+    transition: all 0.5s 0.6s;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/atplus_white.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;   /*使背景图片处于中心位置*/
+    background-size: 25px 20px;     /*规定背景图片的大小*/
+
+    -webkit-transition: all 0.5s 0.6s;
+    -o-transition: all 0.5s 0.6s;
+    transition: all 0.5s 0.6s;
+}
+
+#button:hover .apb{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 161px;
+    left: 95px;
+    background-color: rgba(48, 63, 159, 1);
+    border-radius: 50% 50% 50% 50%;
+
+    -webkit-transition: all .8s;       /*开始的时间，从鼠标悬停在上面的时候开始，根据视频，这里没有延迟*/
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+#button:hover .icon{
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(../assets/images/atplus_green.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 40px 32px;
+    overflow: hidden;
+
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+#info-bar {
+    position: absolute;
+    top: 176px;
+    left: 123px;
+    width: 0px;             /*一开始先设置大小为0*/
+    height: 0px;
+    background-color: #888888;
+    border-radius: 50% 50% 50% 50%;
+    opacity: 0;             /*不可见*/
+
+    -webkit-transition: all 0.5s 0.6s;
+    -o-transition: all 0.5s 0.6s;
+    transition: all 0.5s 0.6s;
+
+    overflow: hidden;
+}
+
+#button:hover #info-bar {
+    position: absolute;
+    top: 21px;
+    left: 62px;
+    width: 130px;
+    height: 130px;
+    background-color: #777777;
+    border-radius: 50% 50% 50% 50%;
+    opacity: 1;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+
+    overflow: hidden;
+}
+
+ul li{
+    list-style: none;
+}
+
+/*以下设置info大圆之下内容的相对位置*/
+#info-bar ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#info-bar li {
+    list-style: none;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 0;
+    color: white;
+}
+
+#info-bar li img {
+    vertical-align: middle;
+}
+
+#info-bar li span {
+    margin-left: 8px;
+}
+
+#info-bar li.mine {
+    display: inline-block;
+    width: 50%;
+    color: #26e79e;
+    box-sizing:border-box;
+}
+
+#info-bar li.posted {
+    padding-left: 15px;
+}
+
+#info-bar li.like {
+    padding-right: 12px;
+}
+
+#info-bar li.comment {
+    font-size: 30px;
+}
+
+#info-bar li.user {
+    padding-top: 7px;
+}
+
+li.button {             /*设置五个小圆的共性*/
+    width: 32px;
+    height: 32px;
+    background: #686868 center no-repeat;
+    background-size: 18px 18px;
+    border-radius: 20px 20px 20px 20px;
+    background-position: 50% 50%;
+
+    -webkit-transition: all 0.5s ease-out 0.6s;
+    -o-transition: all 0.5s ease-out 0.6s;
+    transition: all 0.5s ease-out 0.6s;
+    opacity: 0;
+
+    top: 11px;
+    right: 8px;
+}
+
+li.mask {
+    background-image: url(../assets/images/mask.png);
+    position: absolute;
+
+}
+
+
+#button:hover #control-ring-container .mask {
+    position: absolute;
+    top: -11px;
+    right: 73px;
+    opacity: 1;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+li.history {
+    background-image: url(../assets/images/history.png);
+    position: absolute;
+ 
+}
+
+#button:hover #control-ring-container .history {
+    position: absolute;
+    top: 33px;
+    right: 87px;
+    opacity: 1;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+li.message {
+    background-image: url(../assets/images/message.png);
+    position: absolute;
+
+}
+
+#button:hover #control-ring-container .message {
+    position: absolute;
+    top: 76px;
+    right: 69px;
+    opacity: 1;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+li.setting {
+    background-image: url(../assets/images/setting.png);
+    position: absolute;
+
+}
+
+#button:hover #control-ring-container .setting {
+    position: absolute;
+    top: 102px;
+    right: 30px;
+    opacity: 1;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+li.sign {
+    background-image: url(../assets/images/signin.png);
+    position: absolute;
+}
+
+#button:hover #control-ring-container .sign {
+    position: absolute;
+    top: 95px;
+    right: -15px;
+    opacity: 1;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+/*设置小红圈位置等*/
+li .unread {
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    line-height: 22px;
+    background-color: rgb(247, 53, 53);
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    top: -5px;
+    right: -8px;
+}
+
+#button:hover .unread {
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    line-height: 22px;
+    background-color: rgb(247, 53, 53);
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+/*把五个小圈当成一个整体，设置他相对于button这个block的位置*/
+#control-ring-container {
+    position: absolute;
+    top: 146px;
+    left: 111px;
+}
