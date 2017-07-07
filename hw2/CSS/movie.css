@@ -1,0 +1,132 @@
+/*name:舒俊淮 No.15331274 group: 10 */
+body {
+    background-image: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/2/background.png);
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#setbanner {
+    background-image: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/2/bannerbackground.png);
+    height: 50px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+#overall {
+    width: 800px;
+    border: 4px gray solid;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main{
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.page{
+    background-color: #A2B964;
+    text-align: center;
+    margin: 0;
+    padding:5px 0px 5px 0px;
+}
+
+#rate_and_rev {
+    width: 550px;
+    height: 83px;
+    background-image: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/2/rottenbackground.png);
+}
+
+#vertical_align {
+    vertical-align: bottom;
+}
+
+#rate {
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+}
+
+#review {
+    color: white;
+}
+
+#float_right {
+    float: right;
+    width: 250px;
+    background-color: #A2B964;
+    font-family: Arial, sans-serif;
+}
+
+#float_left {
+    width: 550px;
+}
+
+#for_dl {
+    padding: 0px;
+    margin: 10px;
+}
+
+.for_dd {
+    padding-bottom: 1em;
+}
+
+.for_dt {
+    font-weight: bold;
+}
+
+.left_left {
+    float: left;
+    width: 47%;
+    margin-left: 2%;
+}
+
+.box {
+    font-weight: bold;
+    background-color: #E1D697;
+    border: 2px gray solid;
+    padding:8px;
+    margin-top: 1em;
+}
+
+#newbox {
+    font-weight: bold;
+    background-color: #E1D697;
+    border: 2px gray solid;
+    padding:8px;
+    padding-bottom: 1.5em;
+}
+
+.for_icon, .reviewer {
+    float: left;
+    margin-right: 5px;
+}
+
+.reviews_space {
+    margin-bottom: 3em;
+}
+
+.publication {
+    font-style: italic;
+}
+
+#W3C1 {
+    position: fixed;
+    right: 1px;
+    bottom: 36px;
+}
+
+#W3C2 {
+    position: fixed;
+    right: 1px;
+    bottom: 3px;
+}
