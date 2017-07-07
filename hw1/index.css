@@ -1,0 +1,175 @@
+div {
+    width:240px;
+    height:240px;
+    position:fixed;
+    border-radius:120px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#div2 {
+    animation:second 2s;
+    background-image: url(http://s7.sinaimg.cn/mw690/62e891cate086424063f6&690);
+    animation-fill-mode: forwards;
+    animation-timing-function:linear;
+}
+#div1 {
+    animation:first 2s;
+    background-image: url(http://www.cz88.net/images/2014/8/251305133046.jpg);
+    animation-fill-mode: forwards;
+    animation-timing-function:linear;
+}
+#div3 {
+    animation:third 2s;
+    background-image: 
+    url(http://awb.img1.xmtbang.com/wechatmsg2015/article201504/20150412/thumb/1bc940b86a0e47fba8bd910334b711ef.jpg);
+    animation-fill-mode: forwards;
+    animation-timing-function:linear;
+}
+#div4 {
+    animation:fourth 2s;
+    background-image: url(http://image95.360doc.com/DownloadImg/2016/02/2100/66376106_4.jpg);
+    animation-fill-mode: forwards;
+    animation-timing-function:linear;
+}
+#div5 {
+    animation:fifth 2s;
+    background-image: url(http://img1.gtimg.com/fj/pics/hv1/110/192/688/44786270.jpg);
+    animation-fill-mode: forwards;
+    animation-timing-function:linear;
+}
+
+
+@keyframes second {
+    0%  {
+        background-image: 
+        url(http://s7.sinaimg.cn/mw690/62e891cate086424063f6&690);
+        left: 42%;
+        bottom: 10%;
+    }
+    50% {
+        background-image: url(http://s7.sinaimg.cn/mw690/62e891cate086424063f6&690);
+        left: 32%;
+        bottom: 27%;
+    }
+    100% {
+        background-image: url(http://s7.sinaimg.cn/mw690/62e891cate086424063f6&690g);
+        left: 22%;
+        bottom: 45%;
+    }
+}
+
+@keyframes first {
+    0%  {
+        background-image: url(http://www.cz88.net/images/2014/8/251305133046.jpg);
+        left: 42%;
+        bottom: 10%;
+    }
+    50% {
+        background-image: url(http://www.cz88.net/images/2014/8/251305133046.jpg);
+        left: 26%;
+        bottom: 12%;
+    }
+    100% {
+        background-image: url(http://www.cz88.net/images/2014/8/251305133046.jpg);
+        left: 10%;
+        bottom: 15%;
+    }
+}
+
+
+@keyframes third {
+    0%  {
+        background-image: url(http://awb.img1.xmtbang.com/wechatmsg2015/article201504/20150412/thumb/1bc940b86a0e47fba8bd910334b711ef.jpg);
+        left: 42%;
+        bottom: 10%;
+    }
+    50% {
+        background-image: url(http://awb.img1.xmtbang.com/wechatmsg2015/article201504/20150412/thumb/1bc940b86a0e47fba8bd910334b711ef.jpg);
+        left: 42%;
+        bottom: 35%;
+    }
+    100% {background-image: url(http://awb.img1.xmtbang.com/wechatmsg2015/article201504/20150412/thumb/1bc940b86a0e47fba8bd910334b711ef.jpg);
+        left: 42%;
+        bottom: 60%;
+    }
+}
+
+@keyframes fourth {
+    0%  {
+        background-image: url(http://image95.360doc.com/DownloadImg/2016/02/2100/66376106_4.jpg);
+        left: 42%;
+        bottom: 10%;
+    }
+    50% {
+        background-image: url(http://image95.360doc.com/DownloadImg/2016/02/2100/66376106_4.jpg);
+        left: 52%;
+        bottom: 27%;
+    }
+    100% {
+        background-image: url(http://image95.360doc.com/DownloadImg/2016/02/2100/66376106_4.jpg);
+        left: 62%;
+        bottom: 45%;
+    }
+}
+
+@keyframes fifth {
+    0%  {
+        background-image: url(http://img1.gtimg.com/fj/pics/hv1/110/192/688/44786270.jpg);
+        left: 42%;
+        bottom: 10%;
+    }
+    50% {
+        background-image: url(http://img1.gtimg.com/fj/pics/hv1/110/192/688/44786270.jpg);
+        left: 58%;
+        bottom: 12%;
+    }
+    100% {
+        background-image: url(http://img1.gtimg.com/fj/pics/hv1/110/192/688/44786270.jpg);
+        left: 74%;
+        bottom: 15%;
+    }
+}
+
+div:hover {
+    width:280px;
+    height:280px;
+    border-radius:140px;
+    transform:rotate(360deg);
+}
+
+body {
+    background-image: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg);
+    background-attachment:fixed;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    color :#A4A400 ;
+    background-color :#F0F0F0 ;
+    font-family: Comic Sans MS, Century Gothic, Futura, Verdana, sans-serif;
+    font-size: 28pt;
+    text-align: center;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,a:visited
+{
+    display:block;
+    position:fixed;
+    bottom: 15%;
+    left:40%;
+    font-size: 35pt;
+    background-color:#98bf21;
+    color: #ffffff;
+    font-family: Comic Sans MS, hakuyoxingshu7000, Georgia, Garamond, serif;
+}
+
+a:hover,a:active
+{
+    background-color:#7A991A;
+}
