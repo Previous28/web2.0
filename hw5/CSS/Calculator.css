@@ -1,0 +1,84 @@
+/*
+    Modern Web Programming(Group 10)
+    Homework 5 Calculator
+    Calculator.css
+    css for Calculator.html
+    Made by 舒俊淮
+    Copyright By 舒俊淮 © 2016 All Rights Reserved.
+    No.15331274
+    School of Data and Computer Science
+    Sun Yat-sen University
+    2016-10-05
+*/
+
+/*计算器名字样式*/
+#app_name {
+    font: bold 45px 幼圆;
+    text-align: center;
+    color: #447fec;
+    margin: 0px 0px 20px 0px;
+    padding-top: 20px;
+}
+
+/*计算器除名字以外的部分的样式定义*/
+#container {
+    height: 480px;
+    width: 368px;
+    padding:10px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*以下三个类定义按钮的样式*/
+.button_style {
+    font: 28px Arial, sans-serif;
+    background-color: #eae7e7;
+    color: #545353;
+    height: 80px;
+    width: 80px;
+    margin: 3px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.blue_button {
+    background-color: #afcafb;
+    color: white;
+}
+
+.button_style:hover {
+    background-color: #b1acac;
+    color: white;
+}
+
+/*显示算式的框框*/
+#display {
+    border: 1px gray solid;
+    height: 35px;
+    margin: 3px;
+    position: relative;
+    top: -13px;
+    overflow: hidden;
+    text-align: right;
+}
+/*显示出来的算式样式*/
+#content {
+    font: 22px Arial;
+    position: relative;
+    top: -16px;
+    right: 5px;
+}
+
+/*定义整个计算器的外观，圆角矩形状*/
+#calculator {
+    background-color: white;
+    height: 611px;
+    width: 427px;
+    border-radius: 20px 20px 20px 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+body {
+    background-color: #afcafb;
+}
