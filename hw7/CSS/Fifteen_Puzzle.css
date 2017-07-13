@@ -1,0 +1,269 @@
+/*
+    Modern Web Programming(Group 10)
+    Homework 7 Fifteen Puzzle
+    Fifteen_Puzzle.css
+    CSS file for Fifteen_Puzzle.html
+    Made by 舒俊淮
+    Copyright By 舒俊淮 © 2016 All Rights Reserved.
+    No.15331274
+    School of Data and Computer Science
+    Sun Yat-sen University
+    2016-10-22
+*/
+
+/*说明：本CSS文件样式的定义顺序由上到下分别对应HTML文件的由上到下顺序*/
+body {
+    font-family: "Century Gothic", Verdana, sans-serif;
+    min-width: 800px;
+    min-height: 800px;
+    margin:0 auto;
+    padding: 0px;
+}
+
+/*去掉button点击之后的遗留的框框*/
+button {
+    outline: none;
+}
+
+/*上面部分（游戏名称和游戏状态）的共同样式*/
+.upper {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/*游戏名字样式*/
+#name {
+    text-align: center;
+    font:35px 幼圆;
+}
+/*游戏状态样式*/
+#status {
+    text-align: center;
+    height: 45px;
+    font:30px 幼圆;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/*游戏主要区域的大样式*/
+#main {
+    position: relative;     /*相对于自己本来的位置*/
+    height: 352px;
+    width: 352px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+/*下面6个样式分别对应3张不同的背景图的样式以及鼠标悬停样式*/
+#main .imag1 {
+    height: 86px;
+    width: 86px;
+    border: 1px #cac7c7 solid;
+    background-image: url(../images/imag1.jpg);
+    transition:-webkit-transform 0.2s;
+}
+
+#main .imag2 {
+    height: 86px;
+    width: 86px;
+    border: 1px #cac7c7 solid;
+    background-image: url(../images/imag2.jpg);
+    transition:-webkit-transform 0.2s;
+}
+
+#main .imag3 {
+    height: 86px;
+    width: 86px;
+    border: 1px #cac7c7 solid;
+    background-image: url(../images/imag3.jpg);
+    transition:-webkit-transform 0.2s;
+}
+
+#main .imag1:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.02);
+    z-index: 1;
+}
+
+#main .imag2:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.02);
+    z-index: 1;
+}
+
+#main .imag3:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.02);
+    z-index: 1;
+}
+
+/*下面8个样式组合定义16个div的位置样式*/
+#main .row1 {
+    position: absolute;
+    top: 0px;
+}
+
+#main .row2 {
+    position: absolute;
+    top: 88px;
+}
+
+#main .row3 {
+    position: absolute;
+    top: 176px;
+}
+
+#main .row4 {
+    position: absolute;
+    top: 264px;
+}
+
+#main .col1 {
+    position: absolute;
+    left: 0px;
+}
+
+#main .col2 {
+    position: absolute;
+    left: 88px;
+}
+
+#main .col3 {
+    position: absolute;
+    left: 176px;
+}
+
+#main .col4 {
+    position: absolute;
+    left: 264px;
+}
+
+/*下面16个样式是定义背景图片的位置，通过背景图片位置的不同来形成“图片切割”效果*/
+#main #b1 {
+    background-position: 352px 352px;
+}
+
+#main #b2 {
+    background-position: 264px 352px;
+}
+
+#main #b3 {
+    background-position: 176px 352px;
+}
+
+#main #b4 {
+    background-position: 88px 352px;
+}
+
+#main #b5 {
+    background-position: 352px 264px;
+}
+
+#main #b6 {
+    background-position: 264px 264px;
+}
+
+#main #b7 {
+    background-position: 176px 264px;
+}
+
+#main #b8 {
+    background-position: 88px 264px;
+}
+
+#main #b9 {
+    background-position: 352px 176px;
+}
+
+#main #b10 {
+    background-position: 264px 176px;
+}
+
+#main #b11 {
+    background-position: 176px 176px;
+}
+
+#main #b12 {
+    background-position: 88px 176px;
+}
+
+#main #b13 {
+    background-position: 352px 88px;
+}
+
+#main #b14 {
+    background-position: 264px 88px;
+}
+
+#main #b15 {
+    background-position: 176px 88px;
+}
+
+#main #b16 {
+    background: none;
+    border: none;
+}
+
+/*下面四个按钮的位置样式*/
+#lower {
+    width: 456px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*四个按钮的共同样式*/
+#lower .button {
+    font: 25px 幼圆;
+    display: inline-block;
+    margin: 12px 52px 2px 52px;
+    height: 48px;
+    border: none;
+    background-color: #4585F1;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 4px 4px 3px #9c9c9c;
+}
+
+#lower .button:hover {
+    cursor: pointer;
+}
+
+/*鼠标按下的效果*/
+#lower #start:active {
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+}
+
+#lower #reset:active {
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+}
+
+#lower #change_img:active {
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+}
+
+#lower #original:active {
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+}
+
+/*以下四个样式是原图显示的样式*/
+#ori_img {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.ori_img1 {
+    background-image: url(../images/imag1.jpg);
+}
+
+.ori_img2 {
+    background-image: url(../images/imag2.jpg);
+}
+
+.ori_img3 {
+    background-image: url(../images/imag3.jpg);
+}
