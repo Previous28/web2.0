@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+    Modern Web Programming(Group 10)
+    Homework 6 Games
+    MoleGame.html
+    Made by 舒俊淮
+    Copyright By 舒俊淮 © 2016 All Rights Reserved.
+    No.15331274
+    School of Data and Computer Science
+    Sun Yat-sen University
+    2016-10-15
+-->
+<html>
+    <head>
+        <title>Mole Game</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../CSS/MoleGame.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="../JS/MoleGame.js"></script>
+        <link rel="icon" sizes="196x196" href="../images/favicon.jpg">
+    </head>
+
+    <body>
+        <div id="pos">
+            <p id="name">Whac-a-mole</p>
+            <p id="introduction">Test your skill.How many boxes(moles) can you check(hit) in 30 seconds?</p>
+            <div id="upper">
+                <button id="start_and_stop_button" class="inline" value="0">Start Game | Stop Game</button>
+
+                <div id="Tpos" class="inline">
+                    <span>Time:</span><input onfocus="this.blur();" class="show_style" id="timeleft">
+                </div>
+
+                <input id="status" class="inline" onfocus="this.blur();">
+
+                <div id="Spos" class="inline">
+                    <span>Score:</span><input class="show_style" onfocus="this.blur();" id="score">
+                </div>
+            </div>
+            <div id="main">
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <br/>
+
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <br/>
+
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <br/>
+
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <br/>
+
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <br/>
+
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+                <button class="hole" value="0"></button>
+            </div>
+            
+            <p id="before_rule">Instructions:</p>
+            <p id="rule">1.Click on the radio button(moles) as they are selected randomly by the computer.<br/>2.1 point per hit,minus 1 point per miss.</p>
+        </div>
+    </body>
+</html>
