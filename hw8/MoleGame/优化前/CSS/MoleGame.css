@@ -1,0 +1,137 @@
+/*
+    Modern Web Programming(Group 10)
+    Homework 6 Games
+    MoleGame.css
+    CSS file for MoleGame.html
+    Made by 舒俊淮
+    Copyright By 舒俊淮 © 2016 All Rights Reserved.
+    No.15331274
+    School of Data and Computer Science
+    Sun Yat-sen University
+    2016-10-15
+*/
+/*说明：本CSS文件样式的定义顺序由上到下分别对应HTML文件的由上到下顺序*/
+body {
+    font-family: Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+/*去掉button点击之后的遗留的框框*/
+button {
+    outline: none;
+}
+
+/*位置居中*/
+#pos {
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    width: 900px;
+}
+
+#pos #name {
+    text-align: center;
+    font-size: 30px;
+}
+
+#pos #introduction {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#pos #start_and_stop_button {
+    height: 22px;
+    width: 170px;
+    border: 1px gray solid;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 292px;
+}
+
+/*开始和暂停的按钮点击瞬间会变色*/
+#pos #start_and_stop_button:active {
+    background-color: #8dd1e0;
+}
+
+/*时间和分数之后的框框样式*/
+#pos .show_style {
+    width: 50px;
+    margin-left: 5px;
+    height: 17px;
+}
+
+/*时间和分数定义为inline*/
+#pos .inline {
+    display: inline-block;
+    margin-top: 7px;
+}
+
+/*显示时间的位置*/
+#pos #Tpos {
+    margin-left: 51px;
+    margin-right: 110px;
+}
+
+/*显示游戏状态的框框的样式定义*/
+#pos #status {
+    margin-left: 292px;
+    height: 17px;
+}
+
+/*显示分数的位置*/
+#pos #Spos {
+    margin-left: 41px;
+    margin-right: 110px;
+}
+
+/*游戏的主要区域位置、大小样式*/
+#pos #main {
+    border: 2px #8dd1e0 solid;
+    border-radius: 14px;
+    width: 512px;
+    height: 361px;
+    margin-left: 190px;
+    margin-top: 41px;
+}
+
+/*没有地鼠的洞洞样式*/
+#main .hole {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border: 2px #ccc8c8 solid;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*出现地鼠的洞洞样式*/
+#main .select {
+    background: url(../images/favicon.jpg);
+    background-size:100% 100%;
+    width: 40px;
+    height: 40px;
+    border: 2px #ccc8c8 solid;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*页面下边的规则介绍*/
+#pos #before_rule {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+#pos #rule {
+    margin-left: 35px;
+}
