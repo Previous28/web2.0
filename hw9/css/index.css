@@ -1,0 +1,90 @@
+/*
+    Modern Web Programming(Group 10)
+    Homework 9 Sign Up
+    index.css
+    css file for index.html
+    Made by 舒俊淮
+    Copyright By 舒俊淮 © 2016 All Rights Reserved.
+    No.15331274
+    School of Data and Computer Science
+    Sun Yat-sen University
+    2016-11-15
+*/
+
+body {
+    font-family: "幼圆", Verdana, sans-serif;
+    min-width: 800px;
+    min-height: 800px;
+    margin:0 auto;
+    padding: 0px;
+    background-color: #afcafb;
+}
+
+input {
+    outline: none;
+}
+
+#head {
+    text-align: center;
+    color: white;
+}
+
+/*主要界面的样式*/
+#mainBox {
+    height: 308px;
+    width: 280px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/*以下三个是两个按钮的样式*/
+.button {
+    font: 20px 幼圆;
+    margin: 13px 41px 6px 35px;
+    height: 30px;
+    border: none;
+    background-color: #4585F1;
+    color: white;
+    padding: 3px 10px 10px 10px;
+    border-radius: 4px;
+    transition:all 0.2s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #73a2f1;
+}
+
+.button:active {
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+}
+/*以下两个是信息名字的样式*/
+.messages {
+    height: 20px;
+    padding: 12px 10px 0px 24px;
+}
+
+.keys {
+    padding-right: 2px;
+}
+/*以下三个是填入信息提示的样式*/
+.tips {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 0px 0px 74px;
+    height: 28px;
+    opacity: 0;
+    transition:opacity 0.2s;
+}
+/*填入信息非法的样式*/
+.warning {
+    color: red;
+    opacity: 1;
+}
+/*填入信息合法的样式*/
+.pass {
+    color: green;
+    opacity: 1;
+}

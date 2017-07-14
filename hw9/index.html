@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+    Modern Web Programming(Group 10)
+    Homework 9 Sign Up
+    index.html
+    Made by 舒俊淮
+    Copyright By 舒俊淮 © 2016 All Rights Reserved.
+    No.15331274
+    School of Data and Computer Science
+    Sun Yat-sen University
+    2016-11-15
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="/css/index.css" type="text/css" rel="stylesheet" />
+        <script src="/js/jQuery.js"></script>
+        <script type="text/javascript" src="/js/index.js"></script>
+        <title>Sign Up</title>
+    </head>
+    <body>
+        <h1 id="head">用户注册</h1>
+        <div id="mainBox">
+            <form action="http://localhost:8000/" method="post">
+                <div class="messages"><span class="keys">用户名:</span><input type="text" name='username' id='username'></div>
+                <div class="tips"></div>
+                <div class="messages"><span class="keys">学号:</span><input type="text" name='studentId' id='studentId'></div>
+                <div class="tips"></div>
+                <div class="messages"><span class="keys">电话:</span><input type="text" name='phoneNum' id='phoneNum'></div>
+                <div class="tips"></div>
+                <div class="messages"><span class="keys">邮箱:</span><input type="text" name='email' id='email'></div>
+                <div class="tips"></div>
+                <div>
+                <input type="button" id='reset' value="重置" class="button">
+                <input type="submit" id='submit' value="提交" class="button">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
