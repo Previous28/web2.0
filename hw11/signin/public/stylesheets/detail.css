@@ -1,0 +1,67 @@
+body {
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #afcafb;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+/*主要界面的样式*/
+#mainBox {
+    height: 100px;
+    width: 258px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 3px;
+}
+
+input {
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 5px 8px 4px 7px;
+    margin: 13px 0px 0px 235px;
+}
+
+p {text-align: center;font-size: 16pt;padding-top: 10px;}
+
+.infor {
+    margin: 10px 10px 10px 31px;
+}
+
+/*以下三个是按钮的样式*/
+.button {
+    margin: 13px 41px 6px 35px;
+    height: 20px;
+    border: none;
+    background-color: #4585F1;
+    color: white;
+    padding: 3px 10px 10px 10px;
+    border-radius: 2px;
+    transition:all 0.2s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #73a2f1;
+}
+
+.button:active {
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+}
+
+/*back按钮的样式*/
+#back {
+    font-size: 12px;
+    padding-bottom: 4px;
+    margin: 0px 0px 0px 210px;
+    text-decoration: none;
+}
+
+#errorMsg {
+    text-align: center;
+    color: red;
+}

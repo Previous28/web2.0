@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../stylesheets/detail.css" type="text/css" rel="stylesheet" />
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h1 id="head"><%= title %></h1>
+        <div id="mainBox">
+            <span class="infor">用户名: </span><span><%= username %></span><br />
+            <span class="infor">学号: </span><span><%= studentId %></span><br />
+            <span class="infor">电话: </span><span><%= phoneNum %></span><br />
+            <span class="infor">邮箱: </span><span><%= email %></span><br />
+             <form action="signout" method="post">
+                <input type="submit" value="退出" class="button" id="back">
+            </form>
+        </div>
+        <p id="errorMsg"><%= errorMsg %></p>
+    </body>
+</html>

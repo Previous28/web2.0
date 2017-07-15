@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../stylesheets/regist.css" type="text/css" rel="stylesheet" />
+        <script src="../javascripts/jQuery.js"></script>
+        <script type="text/javascript" src="../javascripts/regist.js"></script>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h1 id="head"><%= title %></h1>
+        <div id="mainBox">
+            <form action="afterRegist" method="post">
+                <div class="messages"><span class="keys">用户名:</span><input type="text" name='username' id='username' value=<%= username %>></div>
+                <div class="tips warning"><%= nameTip %></div>
+                <div class="messages"><span class="keys">密码:</span><input type="password" name='password' id='password1' value=<%= password %>></div>
+                <div class="tips warning"></div>
+                <div class="messages"><span class="keys">确认密码:</span><input type="password"  id='password2' value=<%= password %>></div>
+                <div class="tips warning"></div>
+                <div class="messages"><span class="keys">学号:</span><input type="text" name='studentId' id='studentId' value=<%= studentId %>></div>
+                <div class="tips warning"><%= idTip %></div>
+                <div class="messages"><span class="keys">电话:</span><input type="text" name='phoneNum' id='phoneNum' value=<%= phoneNum %>></div>
+                <div class="tips warning"><%= phoneTip %></div>
+                <div class="messages"><span class="keys">邮箱:</span><input type="text" name='email' id='email' value=<%= email %>></div>
+                <div class="tips warning"><%= emailTip %></div>
+                <div>
+                <input type="button" id='reset' value="重置" class="button">
+                <input type="submit" id='submit' value="提交" class="button">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

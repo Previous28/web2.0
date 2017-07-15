@@ -1,0 +1,71 @@
+body {
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    min-width: 800px;
+    min-height: 800px;
+    margin:0 auto;
+    padding: 0px;
+    background-color: #afcafb;
+}
+
+input {
+    outline: none;
+}
+
+#head {
+    text-align: center;
+    color: white;
+}
+
+/*主要界面的样式*/
+#mainBox {
+    width: 262px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/*以下三个是两个按钮的样式*/
+.button {
+    margin: 13px 41px 6px 35px;
+    height: 20px;
+    border: none;
+    background-color: #4585F1;
+    color: white;
+    padding: 3px 10px 10px 10px;
+    border-radius: 2px;
+    transition:all 0.2s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #73a2f1;
+}
+
+.button:active {
+    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+}
+/*以下两个是信息名字的样式*/
+.messages {
+    height: 20px;
+    padding: 12px 10px 0px 24px;
+}
+
+.keys {
+    padding-right: 2px;
+}
+
+#username {
+    width: 146px;
+}
+
+#regist {
+    font-size: 12px;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+
+#errorMsg {
+    text-align: center;
+    color: red;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../stylesheets/index.css" type="text/css" rel="stylesheet" />
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h1 id="head"><%= title %></h1>
+        <div id="mainBox">
+            <form action="/" method="post">
+                <div class="messages"><span class="keys">用户名:</span><input type="text" name='username' id='username' value=<%= username %>></div>
+                <div class="tips"></div>
+                <div class="messages"><span class="keys">密码:</span><input type="password" name='password' id='password'></div>
+                <div class="tips"></div>
+                <div>
+                <input type="submit" value="登录" class="button">
+                <a href="regist" class="button" id="regist">注册</a>
+                </div>
+            </form>
+        </div>
+        <p id="errorMsg"><%= error %></p>
+    </body>
+</html>
